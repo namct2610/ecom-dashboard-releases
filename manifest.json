@@ -1,0 +1,7 @@
+{
+  "version": "3.7.24",
+  "download_url": "https://raw.githubusercontent.com/namct2610/ecom-dashboard-releases/main/dashboard-v3-3.7.24.zip",
+  "changelog": "Sửa lỗi cập nhật và đối soát GBS.\n- Cập nhật: từ bản này hệ thống tải bản mới từ kho phát hành công khai (chỉ chứa gói cài), nên không còn lỗi \"API rate limit exceeded / 404\" khi bấm Kiểm tra cập nhật.\n- Đối soát GBS: tính tiền sàn đã hoàn và các khoản điều chỉnh của sàn theo báo cáo tài chính (Shopee: cột Số tiền hoàn lại và sheet Adjustment; TikTok: khoản hoàn tiền). Đơn hoàn tiền hoặc được sàn trả qua điều chỉnh không còn báo lệch giả; đơn sàn hoàn sau khi GBS đã nghiệm thu được báo rõ lý do. Cần tải lại các báo cáo tài chính Shopee và TikTok để có dữ liệu này.\n- Quà tặng (SKU GIFT-…) không còn tính vào số lượng, và tiền GBS phân bổ cho quà được giữ nguyên.\n- Một đơn có trong 2 file GBS của cùng tháng không còn bị cộng gấp đôi và được cảnh báo Trùng kỳ. Đơn GBS tạo lại dạng retail mà vẫn ghi tiền cũng được cảnh báo.\n- Đọc được file GBS ghi mỗi đơn một dòng (không có SKU); một file lỗi không còn làm hỏng cả trang đối soát.\n- Đơn \"Đã giao\" chưa có ngày hoàn thành vẫn được đưa vào tháng đối soát.\n- File xuất database không còn chứa khoá bí mật API của các sàn.",
+  "min_php": "8.1",
+  "released_at": "2026-10-22"
+}
